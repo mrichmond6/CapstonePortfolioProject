@@ -52,9 +52,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 //pages routes
 $route['home'] = 'pages/home';
-$route['about'] = 'pages/about';
-$route['contact'] = 'pages/contact';
-$route['portfolio'] = 'pages/portfolio';
-$route['resume'] = 'pages/resume';
-//admin routes
 $route['dashboard'] = 'admin/dashboard';
