@@ -1,35 +1,71 @@
-<!doctype html>
-<html>
-<head>
-<title>The Morgan Codes</title>
-	<link href="assets/admin/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
 
-	<nav class="nav">
-                <h1 class="logo"><a href="home">Morgan Richmond</a></h1>
-				<ul class="topnav" id="myTopnav">
-				
-        <li>
-          <a href="home">HOME</a>
-       </li>
-       
-        <li>
-          <a href="about">ABOUT</a>
-       </li>
-       
-        <li>
-          <a href="contact">CONTACT</a>
-       </li>
-       
-        <li>
-          <a href="portfolio">PORTFOLIO</a>
-       </li>
-       
-        <li>
-          <a href="resume">RESUME</a>
-       </li></nav>
-	<!-- end nav -->
-	
-    <p>Welcome to my website!</p>
-    
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The Morgan Codes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Morgan Richmond</span>
+      <span class="d-none d-lg-block">
+		  <a href="<?php echo base_url() ?>"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt=""></a>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#contact-me">Contact Me</a>
+        </li>
+		<li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href ="<?php echo base_url() ?>login">Login</a>
+		  </li>
+		 	<?php
+	//		  if ($login_id) {
+	//			$this->session->set_userdata('user_id', $login_id);
+	//			echo '<li class="nav-item">
+	//		  <a class="nav-link js scroll-trigger" href="">Logout</a></li>';
+	//			}else{
+	//			echo '<li class="nav-item">
+	//		  <a class="nav-link js scroll-trigger" href="">Login</a></li>';
+	//		  }
+		  ?>
+
+		</ul>
+    </div>
+  </nav>

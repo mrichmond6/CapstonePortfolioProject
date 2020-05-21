@@ -1,9 +1,9 @@
-dasdhb<?php
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 include_once(APPPATH.'core/MY_Controller.php');
 
-class Welcome extends Admin_Controler {
+class Welcome extends Admin_Controller {
 
 	/**
 	 * Index Page for this controller.
