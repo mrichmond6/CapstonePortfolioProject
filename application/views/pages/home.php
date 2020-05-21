@@ -1,8 +1,6 @@
 <?php
 //application/views/pages/home.php
 ?>
-<?php $this->load->view('templates/header');?>
-
   <div class="container-fluid p-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
@@ -10,23 +8,25 @@
         <h1 class="mb-0">Morgan
           <span class="text-primary">Richmond</span>
         </h1>
-        <div class="subheading mb-5">637 North Fife Street · Tacoma, WA 98406 · (509) 759-23145 ·
+        <div class="subheading mb-5"
           <a href="mailto:name@email.com">morgan.richmond@seattlecolleges.edu</a>
         </div>
-        <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        <p class="lead mb-5">I am a current Seattle Central Web Development Program student with an anticipated Spring 2020 graduation. In my previous position(s) as a member of retail management, I was responsible for day to day operations of the store, including inventory management, placing supply orders and ensuring that we stayed within budget, processing and fulfilling web orders to be mailed out to customers, and training new employees on how to use the POS system.</p>
         <div class="social-icons">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/morgan-richmond/",  target="_blank" >
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/mrichmond6",  target="_blank" >
             <i class="fab fa-github"></i>
-          </a>
+		</a>
+<!--
           <a href="#">
             <i class="fab fa-twitter"></i>
           </a>
           <a href="#">
             <i class="fab fa-facebook-f"></i>
           </a>
+-->
         </div>
       </div>
     </section>
@@ -39,49 +39,55 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Senior Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+            <h3 class="mb-0">Key Holder</h3>
+            <div class="subheading mb-3">Soma Intimates, Pacific Place, 600 Pine Street Suite 310, Seattle Wa. 98121</div>
+            <p>•Was responsible for the Operations DOL (Department of Leadership), which includes inventory management, store supplies budgeting and training associates on the POS system.<br>•Opened and closed the store.<br>•Was responsible for weekly paperwork audits.<br>•Handled cash, credit and store merchandise credit transactions as well as refunds.<br>•Assisted with setting the floor and merchandising new product.
+			</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2013 - Present</span>
+            <span class="text-primary">6/15 to 12/16, 10/18 to Current</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+            <h3 class="mb-0">Key Holder</h3>
+            <div class="subheading mb-3">Clarks, Pacific Place, 600 Pine Street Suite 311, Seattle Wa. 98121</div>
+            <p>•Store operations.<br>•Handled change orders and deposits.<br>•Supervised and coached sales associates.<br>•Handled cash, credit and store merchandise credit transactions as well as refunds.<br>•Assisted with merchandising new product.
+			</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">December 2011 - March 2013</span>
+            <span class="text-primary">6/15 to 4/19</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+            <h3 class="mb-0">Cashier</h3>
+            <div class="subheading mb-3">Little Caesars, 2301 W Nob Hill Blvd #6, Yakima, Wa. 509-452-7771
+</div>
+            <p>•Greeted customers and provided excellent customer service.<br>•Handled cash and credit transactions quickly and accurately.<br>•Restocked workstations and display cases.<br>•Cooked and packaged large batches of food that were kept hot until needed or prepared to order.
+</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
+            <span class="text-primary">6/13 to 10/13</span>
           </div>
         </div>
+<!--
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            <h3 class="mb-0"></h3>
+            <div class="subheading mb-3"></div>
+            <p>.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
+            <span class="text-primary"></span>
           </div>
         </div>
 
       </div>
+-->
 
     </section>
 
@@ -93,24 +99,22 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Colorado Boulder</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science - Web Development Track</div>
-            <p>GPA: 3.23</p>
+            <h3 class="mb-0">Seattle Central Community College</h3>
+            <div class="subheading mb-3">AA - Information Technology</div>
+            <div>Web Development Track</div>
+            <p>GPA: 3.7</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2006 - May 2010</span>
+            <span class="text-primary">Spring 2016 - Spring 2020</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
+            <h3 class="mb-0">Insight School of Washington</h3>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
+            <span class="text-primary">Fall 2009 - Spring 2013</span>
           </div>
         </div>
 
@@ -119,7 +123,7 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
 
@@ -133,6 +137,7 @@
           </li>
           <li class="list-inline-item">
             <i class="fab fa-js-square"></i>
+<!--
           </li>
           <li class="list-inline-item">
             <i class="fab fa-angular"></i>
@@ -140,18 +145,22 @@
           <li class="list-inline-item">
             <i class="fab fa-react"></i>
           </li>
+-->
           <li class="list-inline-item">
             <i class="fab fa-node-js"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-sass"></i>
-          </li>
+		  </li>
+<!--      
           <li class="list-inline-item">
             <i class="fab fa-less"></i>
           </li>
+-->
           <li class="list-inline-item">
             <i class="fab fa-wordpress"></i>
           </li>
+<!--
           <li class="list-inline-item">
             <i class="fab fa-gulp"></i>
           </li>
@@ -161,6 +170,7 @@
           <li class="list-inline-item">
             <i class="fab fa-npm"></i>
           </li>
+-->
         </ul>
 
         <div class="subheading mb-3">Workflow</div>
@@ -168,13 +178,15 @@
           <li>
             <i class="fa-li fa fa-check"></i>
             Mobile-First, Responsive Design</li>
+<!--
           <li>
             <i class="fa-li fa fa-check"></i>
             Cross Browser Testing &amp; Debugging</li>
           <li>
             <i class="fa-li fa fa-check"></i>
             Cross Functional Teams</li>
-          <li>
+-->
+			<li>
             <i class="fa-li fa fa-check"></i>
             Agile Development &amp; Scrum</li>
         </ul>
@@ -186,48 +198,21 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+        <p>Apart from being a web developer, I enjoy reading, drawing and painting. During the warmer months here in Washington, I also enjoy biking, hiking, and kayaking.</p>
         <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact-me">
       <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
+		  
+		  <h2 class="mb-5">If you would like to get in contact with me,</h2> 
+		  <p>Please feel free to use the form below or email me directly at Morgan.Richmond@seattlecolleges.edu. I will respond with 48 hours.</p>
       </div>
     </section>
 
   </div>
-
-<?php $this->load->view('templates/footer');?>
+<?php echo base_url()?>
 

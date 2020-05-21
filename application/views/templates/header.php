@@ -29,7 +29,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Morgan Richmond</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile-pic.png" alt="">
+		  <a href="<?php echo base_url() ?>"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt=""></a>
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,18 +38,34 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#education">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="portfolio">Portfolio</a>
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#portfolio">Portfolio</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#contact-me">Contact Me</a>
         </li>
-      </ul>
+		<li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href ="<?php echo base_url() ?>login">Login</a>
+		  </li>
+		 	<?php
+	//		  if ($login_id) {
+	//			$this->session->set_userdata('user_id', $login_id);
+	//			echo '<li class="nav-item">
+	//		  <a class="nav-link js scroll-trigger" href="">Logout</a></li>';
+	//			}else{
+	//			echo '<li class="nav-item">
+	//		  <a class="nav-link js scroll-trigger" href="">Login</a></li>';
+	//		  }
+		  ?>
+
+		</ul>
     </div>
   </nav>
