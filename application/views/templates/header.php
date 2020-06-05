@@ -11,25 +11,26 @@
   <title>The Morgan Codes</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/vendor/fontawesome-free/css/all.min.css');?>" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="assets/css/resume.min.css" rel="stylesheet">
-
+  <link href="<?php echo base_url('assets/css/resume.min.css');?>" rel="stylesheet">
+  <!-- ajax script src -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body id="page-top">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url() ?>">
       <span class="d-block d-lg-none">Morgan Richmond</span>
       <span class="d-none d-lg-block">
-		  <a href="<?php echo base_url() ?>"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt=""></a>
+		  <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?php echo base_url('assets/img/profile.jpg');?>" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,20 +53,15 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#contact-me">Contact Me</a>
         </li>
-		<li class="nav-item">
-			<a class="nav-link js-scroll-trigger" href ="<?php echo base_url() ?>login">Login</a>
-		  </li>
-		 	<?php
-	//		  if ($login_id) {
-	//			$this->session->set_userdata('user_id', $login_id);
-	//			echo '<li class="nav-item">
-	//		  <a class="nav-link js scroll-trigger" href="">Logout</a></li>';
-	//			}else{
-	//			echo '<li class="nav-item">
-	//		  <a class="nav-link js scroll-trigger" href="">Login</a></li>';
-	//		  }
-		  ?>
-
+		  <?php  if (isset($this->session->userdata['logged_in'])) { 
+		echo'<li class="nav-item"><a class="nav-link js-scroll-trigger" href ="logout">Logout</a>
+		</li>';
+		}else{
+	echo '<li class="nav-item"><a class="nav-link js-scroll-trigger" href ="login">Login</a></li>';
+	
+	
+		
+}?>
 		</ul>
     </div>
   </nav>

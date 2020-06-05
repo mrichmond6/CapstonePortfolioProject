@@ -1,14 +1,22 @@
 <?php
 //application/views/pages/home.php
+
+$this->load->view('templates/header');
 ?>
   <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+	  <?php 
+	  if (isset($this->session->userdata['logged_in'])) { 
+		  echo'You are currently logged in, feel free to edit this page!</p>';
+		  echo'<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about" contentEditable="true">';
+	  }else{
+		  echo '<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">';
+	  }?>
+	  
       <div class="w-100">
-        <h1 class="mb-0">Morgan
-          <span class="text-primary">Richmond</span>
+        <h1 class="mb-0" id="about">Morgan
+          <span class="text-primary" id="about">Richmond</span>
         </h1>
-        <div class="subheading mb-5"
+        <div class="subheading mb-5" id="about">
           <a href="mailto:name@email.com">morgan.richmond@seattlecolleges.edu</a>
         </div>
         <p class="lead mb-5">I am a current Seattle Central Web Development Program student with an anticipated Spring 2020 graduation. In my previous position(s) as a member of retail management, I was responsible for day to day operations of the store, including inventory management, placing supply orders and ensuring that we stayed within budget, processing and fulfilling web orders to be mailed out to customers, and training new employees on how to use the POS system.</p>
@@ -19,22 +27,23 @@
           <a href="https://github.com/mrichmond6",  target="_blank" >
             <i class="fab fa-github"></i>
 		</a>
-<!--
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
--->
         </div>
+	  <br/>
+		  <?php 
+	  if (isset($this->session->userdata['logged_in'])) {'
+	  <button id="save" contentEditable="false">Click to Save</button>';
+		}?>
       </div>
     </section>
 
-    <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
+    <hr class="m-0">
+	<?php if (isset($this->session->userdata['logged_in'])) { echo '
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience" contentEditable="true">';
+	}else{
+	echo'<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">';
+	}?>
+      <div class="w-100" >
         <h2 class="mb-5">Experience</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -73,27 +82,14 @@
             <span class="text-primary">6/13 to 10/13</span>
           </div>
         </div>
-<!--
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0"></h3>
-            <div class="subheading mb-3"></div>
-            <p>.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary"></span>
-          </div>
-        </div>
-
-      </div>
--->
-
     </section>
 
     <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+	<?php if (isset($this->session->userdata['logged_in'])) { echo '
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education" contentEditable="true">';
+	}else{
+	echo '<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">';
+	}?>
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
 
@@ -122,10 +118,14 @@
     </section>
 
     <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
+	<?php if (isset($this->session->userdata['logged_in'])) { echo '
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio" contentEditable="true">';
+	}else{
+	echo '<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">';
+	}?>
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
+		  <br/>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
@@ -152,25 +152,9 @@
           <li class="list-inline-item">
             <i class="fab fa-sass"></i>
 		  </li>
-<!--      
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
--->
           <li class="list-inline-item">
             <i class="fab fa-wordpress"></i>
           </li>
-<!--
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
--->
         </ul>
 
         <div class="subheading mb-3">Workflow</div>
@@ -178,14 +162,6 @@
           <li>
             <i class="fa-li fa fa-check"></i>
             Mobile-First, Responsive Design</li>
-<!--
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
--->
 			<li>
             <i class="fa-li fa fa-check"></i>
             Agile Development &amp; Scrum</li>
@@ -194,25 +170,47 @@
     </section>
 
     <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+<?php if (isset($this->session->userdata['logged_in'])) { echo '
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests" contentEditable="true">';
+}else{
+	echo '<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">';
+}?>
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy reading, drawing and painting. During the warmer months here in Washington, I also enjoy biking, hiking, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        <p>Apart from being a web developer, I enjoy reading, drawing and painting. During the warmer months here in Washington, I also enjoy biking, hiking, and kayaking.
+		<br/>
+		When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact-me">
-      <div class="w-100">
-		  
-		  <h2 class="mb-5">If you would like to get in contact with me,</h2> 
-		  <p>Please feel free to use the form below or email me directly at Morgan.Richmond@seattlecolleges.edu. I will respond with 48 hours.</p>
+    <?php
+//	if (isset($this->session->userdata['logged_in'])) { echo '
+//    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact-me" contentEditable="true">';
+//	}else{
+	echo '<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact-me">';
+?>
+      <div class="w-100" ondblclick="makeEditable(this)" onblur="makeReadOnly(this)" contenteditable="true" id="contactMe">
+		 
+        <?php 
+		   
+		  foreach((array)$contactMeData as $contact){
+			  
+			  echo $contact->contactMe; // as you're only getting only contactMe from db
+		  }
+		?>
       </div>
-    </section>
+<br><br>
+	<button id="editBtn" type="submit" value="">Save changes
+	</button>
+	<br><br>
+	<div id="status"></div>
+</section>
 
   </div>
 <?php echo base_url()?>
 
+<?php
+$this->load->view('templates/footer');
+?>

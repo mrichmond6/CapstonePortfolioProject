@@ -51,10 +51,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 //pages routes
-$route['default_controller'] = 'pages/home';
+$route['default_controller'] = 'pages';
+$route['edit'] = 'edit';
+$route['translate_uri_dashes'] = TRUE;
+
 $route['login'] = 'user';
 $route['signup'] = 'user/user-registration-show';
-$route['translate_uri_dashes'] = TRUE;
 $route['user/new_user_registration'] = 'user/new_user_registration';
 $route['dashboard'] = 'user/user_login_process';
 $route['logout'] = 'user/logout';
+$route['data'] = 'edit/load_data';

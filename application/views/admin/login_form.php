@@ -38,6 +38,9 @@ if (isset($message_display)) {
 	</div>
 </div>
 
+
+
 <?php
+echo $contactMeData;
 $this->load->view('templates/footer');
 ?>
